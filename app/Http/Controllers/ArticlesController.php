@@ -33,7 +33,7 @@ class ArticlesController extends Controller
             $this->validate($request, [
                 'title' => 'required|max:255',
                 'content' => 'required',
-                'imageUrl' => 'required|url',
+                'imageUrl' => 'required',
                 'category_id' => 'required',
             ]);
         } catch (ValidationException $e) {
